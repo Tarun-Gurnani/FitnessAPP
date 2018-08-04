@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".User_Diet">
+
+    <ImageView
+        android:id="@+id/smiley_set"
+        android:layout_width="222dp"
+        android:layout_height="91dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:id="@+id/Bmi_data"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/Bmi_String"
+        android:fontFamily="serif"
+        android:gravity="start"
+        android:maxLength="6"
+        android:textColor="@color/fntBlue"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/Bmi_String"
+        android:layout_width="261dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="105dp"
+        android:fontFamily="serif"
+        android:gravity="center_horizontal"
+        android:text="Your BMI is : "
+        android:textColor="@android:color/white"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/Bmi_String_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="217dp"
+        android:fontFamily="serif"
+        android:gravity="center_horizontal"
+        android:text="Then according to your BMI your Diet plan is :  "
+        android:textColor="@android:color/white"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/diet_plan"
+        android:layout_width="138dp"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="182dp"
+        android:layout_marginStart="39dp"
+        android:background="@drawable/shapebtn_background"
+        android:padding="15dp"
+        android:text="Diet Plan"
+        android:textColor="@color/fntBlue"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/Update_bmi_btn"
+        android:layout_width="138dp"
+        android:layout_height="74dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/diet_plan"
+        android:layout_marginEnd="39dp"
+        android:background="@drawable/shapebtn_background"
+        android:padding="15dp"
+        android:text="Update Bmi"
+        android:textColor="@color/fntBlue"
+        android:textSize="19dp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/exercises_button"
+        android:layout_width="274dp"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="94dp"
+        android:background="@drawable/shapebtn_background"
+        android:padding="15dp"
+        android:text="Your Exercises"
+        android:textColor="@color/fntBlue"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+
+</RelativeLayout>

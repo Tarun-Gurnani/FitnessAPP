@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/black"
+    android:layout_height="match_parent"
+    tools:context=".check_your_bmi_first">
+
+    <TextView
+        android:id="@+id/note"
+        android:layout_width="match_parent"
+        android:layout_height="161dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="47dp"
+        android:gravity="center_horizontal"
+        android:text="note"
+        android:textColor="@android:color/white"
+        android:textSize="25dp" />
+
+
+    <Button
+        android:id="@+id/BMI_BTN"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="133dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_weight="1"
+        android:background="@drawable/shapebtn_background"
+        android:text="BMI"
+        android:textColor="@color/fntBlue"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

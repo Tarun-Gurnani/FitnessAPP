@@ -1,0 +1,170 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="10dp"
+    tools:context=".BMI_ACTIVITY"
+    style="?android:attr/buttonBarStyle">
+
+    <EditText
+        android:id="@+id/txtbWeight"
+        android:layout_width="match_parent"
+        android:textColor="@color/cardview_light_background"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/fntBlue"
+        android:inputType="numberDecimal"
+        android:hint="Enter your Weight"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/txtHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/fntBlue"
+        android:hint="Enter your Height"
+        android:textColor="@color/cardview_light_background"
+        android:inputType="numberDecimal"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/layLinHor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp" >
+
+        <Button
+            android:id="@+id/btnClear"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClickClear"
+            android:background="@drawable/shapebtn_background"
+            android:text="@string/txtClear"
+            android:textColor="@color/fntBlue" />
+
+        <View
+            android:id="@+id/divClearCalculate"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dip"
+            android:layout_marginTop="4dip"
+            android:background="?android:attr/dividerVertical"/>
+
+        <Button
+            android:id="@+id/btnCalculate"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shapebtn_background"
+            android:layout_weight="2"
+            android:onClick="onClickCalculate"
+            android:text="@string/txtCalculate"
+            android:textColor="@color/fntBlue" />
+
+        <View
+            android:id="@+id/divCalculateExit"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dip"
+            android:layout_marginTop="4dip"
+            android:background="?android:attr/dividerVertical"
+            />
+
+        <Button
+            android:id="@+id/btnExit"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClickExit"
+            android:background="@drawable/shapebtn_background"
+            android:text="@string/txtExit"
+            android:textColor="@color/fntBlue" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layLinHorRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp" >
+
+        <View
+            android:id="@+id/divCalcIdealLeft"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dip"
+            android:layout_marginTop="4dip"
+            android:background="?android:attr/dividerVertical"
+            />
+
+        <Button
+            android:id="@+id/btnCalcIdeal"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/shapebtn_background"
+            android:text="@string/txtCalcIdeal"
+            android:textColor="@color/fntBlue"
+            android:onClick="onClickCalcIdeal" />
+
+        <View
+            android:id="@+id/divCalcIdealRight"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dip"
+            android:layout_marginTop="4dip"
+            android:background="?android:attr/dividerVertical"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="60dp"
+        android:id="@+id/image_set"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/BMI_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/fntBlue"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtVResults"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/fntBlue"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/DIET_PLAN"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="90dp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shapebtn_background"
+        android:onClick="onClickClear"
+        android:text="DIET_PLAN"
+        android:textColor="@color/fntBlue" />
+
+
+</LinearLayout>

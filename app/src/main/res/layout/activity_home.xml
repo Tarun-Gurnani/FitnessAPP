@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:background="@drawable/background"
+tools:context=".Home">
+
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:text="TextView"
+        android:textSize="25dp"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="35dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp">
+
+        <Button
+            android:id="@+id/BMI_btn"
+            android:layout_width="138dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="60dp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/shapebtn_background"
+            android:padding="15dp"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:text="BMI"
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="220dp">
+
+        <Button
+            android:id="@+id/Diet_btn"
+            android:layout_width="138dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="60dp"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/shapebtn_background"
+            android:padding="15dp"
+            android:text="Diet plan"
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="340dp">
+
+        <Button
+            android:id="@+id/EXERCISE_btn"
+            android:layout_width="138dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="60dp"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/shapebtn_background"
+            android:padding="15dp"
+            android:text="Exercise"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="210dp"
+            android:gravity="bottom|right"
+            android:text="Logout"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:id="@+id/logout_tv"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

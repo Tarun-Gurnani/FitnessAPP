@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    style="?android:attr/buttonBarStyle" >
+
+    <TextView
+        android:id="@+id/lblUnitsSetting"
+        android:layout_width="fill_parent"
+        android:layout_height="30sp"
+        android:text="@string/txtUnitSetting"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/fntBlue"
+        android:layout_marginLeft="5dp"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/spnUnits"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:gravity="center"
+
+        android:src="@drawable/ic_fitness_center_black_24dp"
+
+        android:textColor="@color/cardview_light_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <View
+            android:id="@+id/divSaveLeft"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dip"
+            android:layout_marginTop="4dip"
+            android:background="?android:attr/dividerVertical"
+            />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:gravity="center"
+            android:layout_marginLeft="110dp"
+            android:textSize="25sp"
+            android:textStyle="italic"
+            android:textColor="@color/fntBlue"
+            android:onClick="onClickSave"
+            android:background="@drawable/shapebtn_background"
+            style="?android:attr/buttonBarButtonStyle"
+            />
+
+        <View
+            android:id="@+id/divSaveRight"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dip"
+            android:layout_marginTop="4dip"
+            android:background="?android:attr/dividerVertical"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
